@@ -1,0 +1,126 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.menu li {
+    margin: 0 20px;
+    position: relative;
+}
+
+ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+ul.menu li a:hover {
+    color: #FFD700;
+}
+
+ul.menu li::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #FFD700;
+    width: 0;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+ul.menu li:hover::after {
+    width: 100%;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+section.hero {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+section.hero button {
+    background-color: #FFD700;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section.hero button:hover {
+    background-color: #FFDA44;
+    transform: scale(1.05);
+}
+
+section.about-me {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+section.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+section.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
